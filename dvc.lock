@@ -16,3 +16,13 @@ stages:
     - path: artifacts/raw_local_dir/data.csv
       md5: 7d814a1bda02145efe703f4e1c01847a
       size: 93599
+  always_run:
+    cmd: test.py
+    deps:
+    - path: test.py
+      md5: eb15eb1d51d6c670df237fd4b5512cac
+      size: 178
+    outs:
+    - path: test.txt
+      md5: 28c9f0cbbac3243358ade3dbdfc2526e
+      size: 33

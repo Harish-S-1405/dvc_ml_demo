@@ -1,4 +1,10 @@
 stages:
+  always_run:
+    cmd: test.py
+    deps:
+      - test.py
+    outs: 
+      - test.txt
   load_data:
     cmd: python src/stage_01_load_save.py --config=config/config.yaml
     deps:
